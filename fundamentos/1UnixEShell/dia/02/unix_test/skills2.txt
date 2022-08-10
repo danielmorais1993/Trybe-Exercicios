@@ -1,0 +1,10 @@
+Unix
+Bash
+Internet
+Blazor
+Dotnet
+Csharp
+C++
+CSS
+Javascrypt
+Html
