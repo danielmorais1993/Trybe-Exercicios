@@ -9,6 +9,8 @@
         h1 {
             font-size: 65px;
             color: orange;
+            font-family:sans-serif;
+            text-decoration:underline;
         }
         ul  {
             background-color: mediumseagreen;
@@ -17,12 +19,36 @@
             background-color: blanchedalmond;
 
         }
+        #paragrathcolor{
+            font-weight: 600;
+            font-size: 3em;
+            line-height: 150%;
+        }
+        body {
+            font-size:16px;
+            font-style: normal;
+            list-style: none;
+            line-height: normal;
+
+            
+        }
+        li:nth-of-type(3n){
+            background-color: brown;
+        }
+        li:nth-of-type(2n){
+            background-color: red;
+        }
+        li:first-of-type{
+            background-color: yellow;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>Exercícios 3.2</h1>
 
-    <p class="color-style">qual é a sua cor favorita ?</p>
+    <p id ="paragrathcolor" class="color-style">qual é a sua cor favorita ?</p>
     <ul class="color-style">
         <li >Amarelo</li>
         <li>Vermelho</li>
