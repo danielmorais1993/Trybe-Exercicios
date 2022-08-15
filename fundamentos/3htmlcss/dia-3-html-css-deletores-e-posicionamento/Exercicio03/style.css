@@ -1,0 +1,22 @@
+h1 , p {
+    text-align: center;
+}
+ol > li {
+    background-color:lightskyblue;
+
+}
+:hover ol > li  {
+    background-color:lightgreen;
+
+
+}
+:visited ol>li{
+    color:purple;
+}
+:active ol > li {
+  color: aliceblue;
+}
+li {
+    list-style: none;
+
+}
