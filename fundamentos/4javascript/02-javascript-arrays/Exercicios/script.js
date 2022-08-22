@@ -154,15 +154,48 @@
 // else {
 //     console.log("valor menor ou igual a 20");
 // }
- Numeros=[];
- for(i=1;i<26;i++){
-   Numeros.push(i);
+//  Numeros=[];
+//  for(i=1;i<26;i++){
+//    Numeros.push(i);
 
-}
-console.log(Numeros);
+// }
+// console.log(Numeros);
 
-for (index=0;index<Numeros.length - 1 ; index++){
-   let resultado = Numeros[index]/2;
-   console.log(resultado);
-}
+// for (index=0;index<Numeros.length - 1 ; index++){
+//    let resultado = Numeros[index]/2;
+//    console.log(resultado);
+// }
+
+
+// encontre numeros inteiros impares
+// encontrar numeros no Array
+// numeros divisiveis por 3
+
+
+
+// let numeros=[10,3,5,8,3,2];
+// let number=20;
+// let numerosEncontrados = [];
+
+
+// for (i=0;i<numeros.length;i++){
+//     if (number ===numeros[i]){
+//         numerosEncontrados.push(numeros[i])
+//         console.table(numerosEncontrados);
+
+//     }
+    
+   
+    
+// }
+// if (numerosEncontrados.length === 0){
+//     console.log("Não enontrado");
+// }
+const n = 9;
+
+let resultado = 100;
+for (let index = 0; index <= n; index += 1) {
+  resultado -= index;
+};
+console.log(resultado);
 
