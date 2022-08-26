@@ -18,6 +18,7 @@
           <section id="segundoEUltimoFilhoDoFilho"></section>
         </section>
         Atenção!
+        
         <section id="terceiroFilho"></section>
         <section id="quartoEUltimoFilho"></section>
       </section>
@@ -38,7 +39,28 @@
  //Exercicio 7
  document.getElementById("elementoOndeVoceEsta").nextSibling.nextSibling;
 //Exercicio 8
-document.getElementById("pai").childNodes[5];
+ document.getElementById("pai").childNodes[5];
+//Exercício 9
+const father=document.getElementById("pai");
+const brother = document.getElementById("elementoOndeVoceEsta");
+const newSection = document.createElement('section');
+newSection.className="brother";
+father.appendChild(newSection);
+//Exercicio 10
+newDiv = document.createElement("div");
+newDiv.className="son";
+brother.appendChild(newDiv);
+//Exercicio 11
+son = document.getElementById("primeiroFilhoDoFilho");
+anotherDiv = document.createElement("div");
+anotherDiv.className="son";
+son.appendChild(anotherDiv);
+//Exercicio 12
+document.getElementsByClassName("son")[1].parentNode.nextSibling.nextSibling;
+
+
+
+
  </script>
 </body>
 </html>
