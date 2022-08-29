@@ -12,7 +12,7 @@
   <main>
     <main id="paiDoPai">
       <section id="pai">
-        <section id="primeiroFilho"></section>
+        <section id="primeiroFilho">sdfhsf</section>
         <section id="elementoOndeVoceEsta">
           <section id="primeiroFilhoDoFilho"></section>
           <section id="segundoEUltimoFilhoDoFilho"></section>
@@ -57,6 +57,26 @@ anotherDiv.className="son";
 son.appendChild(anotherDiv);
 //Exercicio 12
 document.getElementsByClassName("son")[1].parentNode.nextSibling.nextSibling;
+//Exercicio 13
+
+let fatherOfFathers=document.querySelectorAll('section');
+
+let fatherTop = document.getElementById("paiDoPai");
+let father1 = document.getElementById("pai")
+let element = document.getElementById("pai").children
+let elementClass= document.getElementsByClassName("fathers");
+for (i=0;i<element.length;i++){
+  fatherOfFathers[i].className = "fathers";
+  
+  }
+  
+
+
+     
+     
+
+
+
 
 
 
