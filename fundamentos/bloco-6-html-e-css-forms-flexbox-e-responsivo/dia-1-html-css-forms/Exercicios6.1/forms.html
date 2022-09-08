@@ -5,64 +5,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   <title>Document</title>
 </head>
-<body>
-  <header>
-    <h1>
+<body class="hero is-success is-fullheight" class="container has-text-centered">
+  <header  >
+    <h1 class="title is-1">
     TrybeTrip
     </h1>
-    <section>
+    <section class="control has-icons-left has-icons-right"  class="container"  >
       <form action="/FORMS" method="GET">
-        <label for="name" >Nome :</label>
-        <input type="text" id="name" name="name" placeholder="Digite seu nome aqui">
+        <label  class="label"  for="name" >Nome :</label>
+        <input class="hero is-large is-info" class="input" class="input is-success" type="text" id="name" name="name" placeholder="Digite seu nome aqui">
         <br>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email"  placeholder="Digite o email aqui " >
+        <label  class="label" for="email">Email :</label>
+        <input class="hero is-large is-info" class="input is-danger"  class="input" type="email" id="email" name="email"  placeholder="Digite o email aqui " >
         <br>
-        <label for="opt1">
-        <input type="radio"name="opt" id="opt1" >
+        <label class="checkbox"  for="opt1">
+        <input class="hero is-large is-info" class="checkbox"class="radio" type="radio"name="opt" id="opt1" >
         Cidade
       </label>
-      <label for="opt2">
-        <input type="radio"name="opt" id="opt2" >
+      <label class="checkbox"  for="opt2">
+        <input  class="hero is-large is-info" class="checkbox"class="radio"  type="radio"name="opt" id="opt2" >
         Campo
       </label>
-      <label for="opt3">
-        <input type="radio"name="opt" id="opt3" >
+      <label  class="checkbox" for="opt3">
+        <input  class="hero is-large is-info" class="checkbox"class="radio"  type="radio"name="opt" id="opt3" >
         Praia
       </label>
-      <label for="opt4">
-        <input type="radio"name="opt" id="opt4" >
+      <label  class="checkbox"  for="opt4">
+        <input  class="hero is-large is-info" class="checkbox"class="radio"    type="radio"name="opt" id="opt4" >
         Montanhas
       </label>
       <br>
       
-      <fieldset><label for="text-area">
+      <fieldset  class=".container.is-max-desktop"  ><label class="label" for="text-area">
         Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
         <br>
-        <textarea name="text-area" id="text-area" cols="30" rows="10"  placeholder="Insira o texto aqui"></textarea>
+        <textarea class="hero is-large is-info" class="textarea"class="textarea is-primary" name="text-area" id="text-area" cols="30" rows="10"  placeholder="Insira o texto aqui"></textarea>
       </label>
       </fieldset>
       <br>
       <h2>Qual a melhor data para realizar a viagem?</h2>
-      <label for="date-call">Data :</label>
-      <input type="date" name="date" id="date-call">
+      <label class="label"for="date-call">Data :</label>
+      <input class="hero is-large is-info" class="input" type="date" name="date" id="date-call">
 
       <br>
 
 
-      <label for="check1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-        <input type="checkbox" name="check" id="check1">
+      <label class="$hero-body-padding-medium" class="file-label" for="check1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        <input class="$hero-body-padding-medium" class="checkbox"  type="checkbox" name="check" id="check1">
       </label>
       <br>
-      <label for="check2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-        <input type="checkbox" name="check" id="check2" >
+      <label  class="file-label"  for="check2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        <input  class="checkbox"type="checkbox" name="check" id="check2" >
       </label>
+      <br>
 
-      <button type="submit" id="btn-send">Enviar</button>
-      <button  id="btn-clear">Apagar</button>
+      <button class="button is-primary" type="submit" id="btn-send">Enviar</button>
+      <button class="button is-warning"  type="reset" id="btn-clear">Apagar</button>
 
 
 

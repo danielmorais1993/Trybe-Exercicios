@@ -7,13 +7,12 @@ const textarea = document.querySelector('#text-area')
 
 
 
+
 function checkAvailability(evento, Min, Max) {
   if (evento.value.length < Min || evento.value.length > Max) {
-    window.alert('Invalid Data');
-   
-     
-
-}
+    return false;
+   }
+   return true;
 }
 
 
@@ -21,22 +20,15 @@ function checkAvailability(evento, Min, Max) {
 
 function callButton(event) {
 
-  event.preventDefault();
-  console.log(event.target)
-  checkAvailability(nome, 10, 40);
-  checkAvailability(email, 10, 50);
-  checkAvailability(textarea, 0, 500);
   
+  console.log(event.target)
+  if(checkAvailability(nome, 10, 40) && checkAvailability(email, 10, 50) && checkAvailability(textarea, 0, 500)){
+    alert('all data sent');
+  }else{
+    alert('invalid data , check the password or email  correctly');
+  }
 
-
-
-  return ('All data was sent')
-
-
-
-
-
-
+ event.preventDefault();
 }
 
 function Erase(event) {
