@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../../../../Downloads/bulma"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dia-1-html-css-forms"
+	}
+}
