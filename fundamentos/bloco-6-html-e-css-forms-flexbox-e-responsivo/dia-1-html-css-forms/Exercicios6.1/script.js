@@ -2,7 +2,28 @@ const buttonSend = document.getElementById('btn-send');
 const buttonErase = document.getElementById('btn-clear');
 const nome = document.querySelector('#name')
 const email = document.querySelector('#email')
-const textarea = document.querySelector('#text-area')
+const textarea = document.querySelector('#text-area');
+const dateValidity = document.querySelector("#date-call");
+
+
+$(function() {
+  $( "#calendario" ).datepicker({
+      showOn: "button",
+      buttonImage: "googlecalendar.jpeg",
+      buttonImageOnly: true,
+      showButtonPanel:true,
+      changeMonth: true,
+      changeYear: true
+      
+      
+  });
+  $("#calendario").datepicker({dateFormat: 'dd-mm-yy'});
+ 
+});
+
+
+
+
 
 
 
@@ -19,6 +40,8 @@ function checkAvailability(evento, Min, Max) {
 
 
 function callButton(event) {
+  
+
 
   
   console.log(event.target)
@@ -27,8 +50,8 @@ function callButton(event) {
   }else{
     alert('invalid data , check the password or email  correctly');
   }
-
- event.preventDefault();
+  event.preventDefault();
+ 
 }
 
 function Erase(event) {
@@ -57,3 +80,5 @@ buttonSend.addEventListener('click', callButton)
 
 
 buttonErase.addEventListener('click', Erase)
+
+
