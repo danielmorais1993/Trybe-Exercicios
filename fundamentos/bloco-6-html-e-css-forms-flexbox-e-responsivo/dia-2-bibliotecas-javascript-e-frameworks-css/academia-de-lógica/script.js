@@ -1,8 +1,18 @@
 const checkIn =document.querySelector('.inputCheckin');
 const checkOut= document.querySelector('.inputCheckOut');
 const submitBtn= document.querySelector('#submit-btn');
+const clearBtn = document.querySelector('#clear-btn');
 
-submitBtn.addEventListener('click',() => {
-  event.preventDefaul
 
+function createElement(element){
+  const elementCreated
 }
+
+submitBtn.addEventListener('click',function ( event) {
+event.preventDefault();
+
+
+
+})
+
+
