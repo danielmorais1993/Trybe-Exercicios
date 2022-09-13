@@ -1,0 +1,110 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ checkpoint 590px
+ */
+ html {
+  box-sizing: border-box;
+  font-size: larger;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    
+
+}   
+
+article {
+
+}
+
+h1 {
+
+
+}
+
+h2 {
+
+
+}
+
+img {
+	max-width: 100%;
+  padding-bottom: 20px;
+}
+
+main {
+
+}
+
+section {
+ 
+
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+
+@media screen and (max-width:590px) {
+  html{
+    background-color: aquamarine;
+    font-size: 2rem;
+    margin: 10%;
+  }
+  section{
+    display: flex;
+    
+   
+   flex-wrap: wrap;
+   flex-direction: row;
+   
+ 
+
+  }
+
+  figure {
+    width: 50%;
+    padding: 10px;
+
+  }
+
+  
+}
+
+
+@media screen and (min-width:1156px) and (max-width:1691px) {
+  section {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+   }
+   h2 {
+    font-size: 1.3rem ;
+    text-align: center;
+  
+  }
+  h1{
+    text-align:center;
+  }
+  html{
+    background-color: yellowgreen;
+    font-size: 2rem;
+    margin: 10%;
+  }
+
+  
+}
+
+
