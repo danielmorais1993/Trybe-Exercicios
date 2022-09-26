@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663682525706" clover="3.2.0">
+  <project timestamp="1663682525706" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3" elements="18" coveredelements="16" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="loginValidation.js" path="/Users/danielmorais/Documents/Trybe/Trybe-exercicios/Trybe-Exercicios/fundamentos/secao-7-introducao-a-javascript-es6-e-testes-unitarios/dia-03-JavaScript-ES6-primeiros-passos-em-Jest/exercicios7.3/project/loginValidation.js">
+      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
