@@ -13,8 +13,8 @@ const uppercase = (str, callback) => {
 describe('Verificar se retorna uppercase',() =>{
  
   test('uppercase',done=>{
-    uppercase('Marcela',cow=>{
-      expect(cow).toBe('MARCELA');
+    uppercase('Marcela',vet=>{
+      expect(vet).toBe('MARCELA');
       done();
     })
   })
