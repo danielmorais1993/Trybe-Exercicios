@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
+
 class Mago extends Component{
+
   render(){
-    return <span>Hello World!</span>
+    return <div className="Mago"></div>
   }
 }
 export default Mago
