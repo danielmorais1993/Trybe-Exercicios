@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+     
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+     // 🚀 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+    let createh1=  document.createElement('h1');
+    let elementFatherAll=document.querySelector('body');
+    elementFatherAll.appendChild(createh1);  
+    createh1.innerText="Exercício 5.2 - JavaScript DOM ";
+// 🚀 Adicione a tag main com a classe main-content como filho da tag body;
+let createMain=document.createElement('main');
+elementFatherAll.appendChild(createMain); 
+elementMain =document.getElementsByTagName('main');
+elementMain[0].className="main-content";
+// 🚀 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+let  createSection = document.createElement('section');
+elementMain[0].appendChild(createSection);
+elementSection = document.getElementsByTagName('section');
+elementSection[0].className='center-content';
+// 🚀 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let createParagraph = document.createElement('p');
+elementSection[0].appendChild(createParagraph);
+document.getElementsByTagName('p')[0].innerText='The way to comunicate with the browser throught nodes';
+// 🚀 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+function adicionarElementoEClasse(elemento,classe1,classe2,index,index2){
+let createElement = document.createElement(`${elemento}`);
+let elementFather = document.getElementsByClassName(classe1)[index];
+elementFather.appendChild(createElement);
+let elementCreated = document.getElementsByTagName(`${elemento}`);
+elementCreated[index2].className = classe2;
+}
+adicionarElementoEClasse('section','main-content','left-content',0,1);
+// 🚀 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+adicionarElementoEClasse('section','main-content','right-content',0,2);
+// 🚀 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+adicionarElementoEClasse('img','right-content','small-image',0,0);
+document.getElementsByTagName('img')[0].src="https://picsum.photos/200";
+// 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+adicionarElementoEClasse('ul','right-content','list' ,0,0);
+for (let i=0;i<10;i++){
+  adicionarElementoEClasse('li','list','list' ,0,i);  
+}
+let ArrayNumber=['zero','um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
+for (let j =1;j<ArrayNumber.length;j++){
+document.querySelectorAll('.list')[j].innerText=ArrayNumber[j];
+}
+// 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+for (let i=0;i<3;i++){
+adicionarElementoEClasse('h3','main-content',"" ,0,i);
+}
+// Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+// 🚀 Adicione a classe title na tag h1 criada;
+document.getElementsByTagName('h1')[0].className='title';
+// 🚀 Adicione a classe description nas 3 tags h3 criadas;
+for (i=0;i<3;i++){
+document.getElementsByTagName('h3')[i].className='description'
+}
+
+// 🚀 Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+document.querySelectorAll('.main-content')[0].removeChild(document.querySelectorAll('.left-content')[0]);
+// 🚀 Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+document.querySelectorAll('.right-content')[0].style.marginRight='auto';
+// 🚀 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+document.querySelectorAll('.center-content')[0].style.backgroundColor='auto'
+// 🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+document.querySelectorAll('.list')[0].removeChild(document.querySelectorAll('.list')[10]);
+document.querySelectorAll('.list')[0].removeChild(document.querySelectorAll('.list')[9]);
+    </script>
+  </body>
+</html> 
